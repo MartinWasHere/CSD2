@@ -3,7 +3,7 @@
 #ifndef H_GUITAR
 #define H_GUITAR
 
-class Guitar
+class Guitar : public Instrument
 {
 public:
   void bendString();

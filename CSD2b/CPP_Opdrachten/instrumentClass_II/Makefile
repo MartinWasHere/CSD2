@@ -1,8 +1,11 @@
-all: main.o instrument.o
-				g++ -o instrument main.o instrument.o
+all: main.o instrument.o guitar.o
+				g++ -o instrument main.o instrument.o guitar.o
 
 instrument.o: instrument.cpp
 				g++ -c instrument.cpp
+
+guitar.o:	guitar.cpp
+				g++ -c guitar.cpp
 
 main.o: main.cpp
 				g++ -c main.cpp
