@@ -1,15 +1,17 @@
-#include "instrument.h"
+#ifndef _GUITAR_H_
+#define _GUITAR_H_
 
-#ifndef H_GUITAR
-#define H_GUITAR
+#include "instrument.h"
 
 class Guitar : public Instrument
 {
 public:
+  Guitar(std::string sound);
+  void makeSound();
   void bendString();
 private:
   std::string foo;
 
-}; // Instrument{}
+}; // Guitar{}
 
-#endif // H_GUITAR
+#endif // _GUITAR_H_
