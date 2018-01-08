@@ -1,17 +1,12 @@
 #include <iostream>
 #include "guitar.h"
 
-Guitar::Guitar(std::string sound) : Instrument(sound)
+Guitar::Guitar(std::string sound) : Instrument(sound, "gitaar", "snaarInstrument", 20, 300, "Ploing")
 {
-  foo=sound;
-}
 
-void Guitar::makeSound()
-{
-    std::cout << foo <<  std::endl;
 }
 
 void Guitar::bendString()
 {
-    std::cout << "bendString()" <<  std::endl;
+    std::cout << "bendString" <<  std::endl;
 }

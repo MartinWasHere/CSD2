@@ -1,17 +1,11 @@
 #include <iostream>
 #include "flute.h"
 
-Flute::Flute(std::string sound) : Instrument(sound)
+Flute::Flute(std::string sound) : Instrument(sound, "fluit", "blaasInstrument", 50, 120, "Fieeeuwt")
 {
-  foo=sound;
-}
-
-void Flute::makeSound()
-{
-    std::cout << foo <<  std::endl;
 }
 
 void Flute::pitchBend()
 {
-    std::cout << "pitchBend()" <<  std::endl;
+    std::cout << "pitchBend" <<  std::endl;
 }

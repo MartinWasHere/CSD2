@@ -1,12 +1,13 @@
 #include <iostream>
 #include "instrument.h"
 
-Instrument::Instrument(std::string sound)
+
+Instrument::Instrument(std::string sound, std::string name, std::string type, int pitchLow, int pitchHigh, std::string herrie)
 {
-  foo=sound;
+  noise=sound;
 }
 
 void Instrument::makeSound()
 {
-    std::cout << foo <<  std::endl;
+    std::cout << noise <<  std::endl;
 }

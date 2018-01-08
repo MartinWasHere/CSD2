@@ -4,10 +4,10 @@
 class Instrument
 {
 public:
-  Instrument(std::string sound);
+  Instrument(std::string sound, std::string name, std::string type, int pitchLow, int pitchHigh, std::string herrie);
   void makeSound();
 private:
-  std::string foo;
+  std::string noise;
 
 }; // Instrument{}
 

@@ -7,10 +7,8 @@ class Guitar : public Instrument
 {
 public:
   Guitar(std::string sound);
-  void makeSound();
   void bendString();
 private:
-  std::string foo;
 
 }; // Guitar{}
 
